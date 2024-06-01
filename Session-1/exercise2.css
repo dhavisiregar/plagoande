@@ -1,0 +1,29 @@
+.animal-table {
+  width: 100;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: left;
+  margin: auto;
+}
+
+.animal-table tr {
+  background-color: black;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.animal-table,
+td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.animal-table img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

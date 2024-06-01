@@ -1,0 +1,45 @@
+.container {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 20px auto;
+  width: 600px;
+}
+
+.container .image .img {
+  height: 200px;
+  width: 500px;
+  display: flex;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px 20px 20px;
+}
+
+.button .btn {
+  background-color: blue;
+  color: white;
+  border-radius: 6px;
+  outline: 2px solid black;
+  outline-offset: 1px;
+  padding: 5px 30px 5px 30px;
+}
+
+.btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: lightblue;
+  cursor: pointer;
+}

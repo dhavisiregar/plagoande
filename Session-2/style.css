@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+nav {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+nav ul,
+li {
+  margin: 8px;
+}
+
+nav .sticky {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.flex-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-item {
+  background-color: lightgray;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #000;
+}
+
+.grid-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 10px;
+  max-width: 960px;
+  margin: 0;
+}
+
+.grid-container div {
+  background-color: rgb(86, 171, 199);
+  padding: 30px;
+}
+
+.linear-gradient {
+  background: linear-gradient(to right, blue, yellow);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.radial-gradient {
+  background: linear-gradient(to left, red, black);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.element {
+  padding: 20px;
+  background-color: blue;
+  color: white;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.rotate {
+  display: flex;
+}
+
+.slide-in {
+  display: flex;
+  animation: slide-in 2s ease-in-out infinite;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: black;
+  color: azure;
+  transform: translate(100px, 100px);
+  animation: rotate 2s linear infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .element {
+    padding: 20px;
+    background-color: pink;
+    color: white;
+  }
+  .grid-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 68px) {
+  .element {
+    background-color: bisque;
+  }
+}
+
+@media only screen and (min-width: 168px) {
+  .element {
+    background-color: paleturquoise;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    grid-gap: 10px;
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 268px) {
+  .element {
+    background-color: lemonchiffon;
+    color: crimson;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 30% 30%;
+    grid-gap: 10px;
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 368px) {
+  .element {
+    background-color: chocolate;
+    color: azure;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+    max-width: 960px;
+  }
+}
