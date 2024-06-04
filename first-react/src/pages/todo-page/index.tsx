@@ -56,7 +56,7 @@ const TodoPage: FC<Todo> = () => {
           />
           <button
             onClick={addTodo}
-            className="px-4 py-2 text-white bg-red-700 rounded-lg hover:bg-black"
+            className="px-4 py-2 text-white bg-red-700 rounded-lg hover:bg-red-800"
           >
             Add
           </button>
