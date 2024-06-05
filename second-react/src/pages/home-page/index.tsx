@@ -34,7 +34,7 @@ const Home = () => {
       icon: "success",
       text: "You have successfully logged out",
       title: "Success",
-      confirmButtonText: "OK",
+      confirmButtonText: "Good Bye!",
     }).then((response) => {
       if (response.isConfirmed) {
         Cookies.remove("auth");

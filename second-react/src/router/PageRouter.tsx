@@ -8,6 +8,7 @@ import Home from "../pages/home-page";
 import Setting from "../pages/setting-page";
 import Auth from "../pages/auth-page";
 import Counter from "../pages/counter-page";
+import Users from "../pages/users-page";
 
 const PageRouters = () => {
   return (
@@ -19,6 +20,7 @@ const PageRouters = () => {
             <Route element={<Auth />} path="/auth" />
             <Route element={<Setting />} path="/setting" />
             <Route element={<Counter />} path="/counter" />
+            <Route element={<Users />} path="/users" />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
